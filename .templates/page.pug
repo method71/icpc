@@ -6,32 +6,23 @@ html(lang="en")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		title ICPC
-		link(rel="stylesheet", href="/assets/styles/main.css")
+		link(rel="stylesheet", href="assets/styles/main.css")
 	body
 		include ../assets/img/sprite.svg
 
 		nav.mainmenu
 			.mainmenu__list
-				a.mainmenu__item(class = (activeMenu == 'home') ? 'mainmenu__item--current' : '')(href="/")
-					| Home 
-				a.mainmenu__item(class = (activeMenu == 'about') ? 'mainmenu__item--current' : '')(href="/about.html")
-					| About ICPC 
-				a.mainmenu__item(class = (activeMenu == 'participants') ? 'mainmenu__item--current' : '')(href="/for-participants.html")
-					| For participants 
-				a.mainmenu__item(class = (activeMenu == 'astana') ? 'mainmenu__item--current' : '')(href="/astana.html")
-					| Astana 
-				a.mainmenu__item(class = (activeMenu == 'venue') ? 'mainmenu__item--current' : '')(href="/venue.html")
-					| Venue 
-				a.mainmenu__item(href="https://news.icpc.global/gallery" target="_blank")
-					| Gallery
+				a.mainmenu__item(class = (activeMenu == 'home') ? 'mainmenu__item--current' : '')(href="index.html") Home 
+				a.mainmenu__item(class = (activeMenu == 'about') ? 'mainmenu__item--current' : '')(href="about.html") About ICPC
+				a.mainmenu__item(class = (activeMenu == 'participants') ? 'mainmenu__item--current' : '')(href="for-participants.html") For participants 
+				a.mainmenu__item(class = (activeMenu == 'astana') ? 'mainmenu__item--current' : '')(href="astana.html") Astana 
+				a.mainmenu__item(class = (activeMenu == 'venue') ? 'mainmenu__item--current' : '')(href="venue.html") Venue 
+				a.mainmenu__item(href="https://news.icpc.global/gallery" target="_blank") Gallery
 					svg: use(xlink:href="#external")
-				a.mainmenu__item(class = (activeMenu == 'excursions') ? 'mainmenu__item--current' : '')(href="/excursions.html")
-					| Excursions 
-				a.mainmenu__item(href="https://docs.icpc.global/wf-schedule/" target="_blank")
-					| Schedule
+				a.mainmenu__item(class = (activeMenu == 'excursions') ? 'mainmenu__item--current' : '')(href="excursions.html") Excursions 
+				a.mainmenu__item(href="https://docs.icpc.global/wf-schedule/" target="_blank") Schedule
 					svg: use(xlink:href="#external")
-				a.mainmenu__item(class = (activeMenu == 'oragnizers') ? 'mainmenu__item--current' : '')(href="/organizers.html")
-					| Host and Organizers
+				a.mainmenu__item(class = (activeMenu == 'oragnizers') ? 'mainmenu__item--current' : '')(href="organizers.html") Host and Organizers
 			button.mainmenu__toggle Menu
 			div.mainmenu__overlay
 
@@ -72,6 +63,6 @@ html(lang="en")
 					div.footer__contacts
 						a(href="mailto:manager@icpc.global" target="_blank") manager@icpc.global
 			
-		script(src="/assets/scripts/swiper-bundle.min.js")
-		script(src="/assets/scripts/countUp.min.js" type="module")
-		script(src="/assets/scripts/main.js" type="module")
+		script(src="assets/scripts/swiper-bundle.min.js")
+		script(src="assets/scripts/countUp.min.js" type="module")
+		script(src="assets/scripts/main.js" type="module")
