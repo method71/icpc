@@ -1,0 +1,184 @@
+extends ../.templates/page.pug
+
+block var
+	- var activeMenu = 'home'
+
+block body
+	section.hero.hero--home
+		video(src="/video/preview.mp4" autoplay instantplay muted loop).hero__video
+		div.hero__overlay
+	
+		div.hero__wrap
+			div.hero__logo
+				img(src="/logo/host.png")
+
+			div.hero__text
+				div.hero__details
+					span [
+					span World Finals
+					span |
+					span 15-20 September 2024
+					span |
+					span Astana, Kazakhstan
+					span ]
+				div.hero__title The 48th Annual World Championship of the ICPC International Collegiate Programming Contest
+
+			button.hero__button.play-button
+				svg.play-button__icon
+					use(xlink:href="#play")
+				span.play-button__wrap
+					.play-button__title Video
+					.play-button__subtitle 02:31
+	
+	div.content
+		section.section.s-host
+			h1.section__title.s-host__title Host and Organizers
+			div.s-host__list
+				div.s-host__item
+					div.s-host__logo
+						img(src="/logo/cpf.png")
+					p Kazakhstan Competitive Programming Federation is a key player in promoting educational initiatives and driving innovation within the IT industry in the country.
+				div.s-host__item
+					div.s-host__logo
+						img(src="/logo/freedom.png")
+					p Freedom Holding actively develops the country's digital system, providing the younger generation with the opportunity to gain experience and grow with the support of a world-class corporation.
+				div.s-host__item
+					div.s-host__logo
+						img(src="/logo/dsm.png")
+					p The Ministry is engaged in the formation and implementation of the state policy in the field of digital development of the country.
+				div.s-host__item
+					div.s-host__logo
+						img(src="/logo/icpc.png")
+					p ICPC is an algorithmic programming contest for college students where teams of three, representing their university, work to solve real-world problems, fostering collaboration, creativity, innovation.
+
+		hr
+
+		section.section.s-quote
+			div.s-quote__wrap
+				div.s-quote__photo
+					img(src="/assets/img/bill.png")
+					img(src="/assets/img/bill.png").s-quote__photo-blur
+				p.s-quote__text
+					| During the DIGITAL BRIDGE forum, ICPC Executive Director William B. Poucher announced that the World Finals Championship of the International Collegiate Programming Contest would be held in Astana, Kazakhstan in 2024, marking a great honor for our country to host such a prestigious event.
+
+		hr
+
+		section.section.s-country
+			div.s-country__main
+				h1.section__title.s-country__title
+					| Unveiling the beauty of the ICPC World Finals 2024 destination…
+				div.s-country__photos
+					img(src="/assets/img/country-1.png", alt="")
+					img(src="/assets/img/country-2.png", alt="")
+					img(src="/assets/img/country-3.png", alt="")
+				p.s-country__text
+					| Kazakhstan: a land of incredible contrasts, where majestic mountain peaks give way to endless steppes, and the Caspian Sea adorns the western shores. We are delighted to welcome you to our capital, Astana, where modern innovations blend with rich history and traditions. Join us in discovering the unique beauty and hospitality of our country!
+			div.s-country__pattern
+		
+		hr
+
+		section.section.s-city.s-slider
+			div.s-slider__heading.section__heading
+				h1.section__title.s-slider__title.s-city__title Welcome to Astana
+				nav.s-slider__controls
+					button.s-slider__controls-item(data-direction="prev") (<-)
+					button.s-slider__controls-item(data-direction="next") (->)
+			div.s-slider__list
+				div.swiper-wrapper
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/1.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Baiterek Monument
+							div.s-city-item__desc It is not only the main attraction of Astana, but also one of the most significant symbols of sovereign Kazakhstan
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/2.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Nur Alem Museum of Future Energy
+							div.s-city-item__desc It is a unique structure in the world, as it is made in the form of a sphere with a diameter of 80 meters
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/3.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Khan Shatyr Shopping and Entertainment Center
+							div.s-city-item__desc It is the largest tent structure in the world and the first and only lifestyle center that combines shopping and entertainment venues under one roof.
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/4.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title National Museum of the Republic of Kazakhstan
+							div.s-city-item__desc Visitors will be introduced to the history of the country by the halls of ancient and medieval history, the history of gold, ethnography of independent Kazakhstan, Astana and contemporary art
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/5.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Botanical garden
+							div.s-city-item__desc It is the largest botanical garden in the city of Astana, which features a pond with fountains and three bridges
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/6.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Astana Grand Mosque
+							div.s-city-item__desc It is the largest mosque in the country and in all of Central Asia, it ranks among the top ten largest mosques in the world
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/7.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Nurzhol Boulevard
+							div.s-city-item__desc It runs from the presidential residence Ak Orda to the Khan Shatyr shopping and entertainment center. At the center of the boulevard the Bayterek monument is located, while along its length the administrative buildings of the most important state bodies and private companies are found
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/8.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Burabay
+							div.s-city-item__desc Just three hours drive from Astana there is one of the most popular resort areas in Kazakhstan – Borovoe (Burabay)
+					div.s-city-item.swiper-slide
+						img(src="/assets/img/astana/9.png").s-city-item__photo
+						div.s-city-item__text
+							div.s-city-item__title Palace of Peace and Reconciliation
+							div.s-city-item__desc Its striking pyramid structure, crafted from glass and steel, leaves an indelible impression on all who behold it
+		
+		hr
+
+		section.section.s-partners
+			div.section__heading
+				h1.section__title.section__title--center.s-partners__title Sponsors and Supporters
+			div.s-partners__list
+				a(href="https://career.huawei.com/reccampportal/portal5/index.html" target="_blank").s-partners__item
+					img(src="/logo/huawei.png")
+				a(href="https://upe.acm.org/" target="_blank").s-partners__item
+					img(src="/logo/upe.png")
+				a(href="https://www.jetbrains.com/" target="_blank").s-partners__item
+					img(src="/logo/jetbrains.png")
+
+		hr
+
+		section.section.s-partners
+			div.section__heading
+				h1.section__title.section__title--center.s-partners__title Hosts and Organizers
+			div.s-partners__list
+				a(href="https://icpc.global/" target="_blank").s-partners__item
+					img(src="/logo/icpc.png")
+				a(href="https://www.gov.kz/memleket/entities/mdai?lang=en" target="_blank").s-partners__item
+					img(src="/logo/dsm.png")
+				a(href="https://cpfed.kz/en/" target="_blank").s-partners__item
+					img(src="/logo/cpf.png")
+				a(href="https://freedomholdingcorp.com/" target="_blank").s-partners__item
+					img(src="/logo/freedom.png")
+		
+		hr
+
+		section.section.s-stats
+			div.section__heading
+				h1.section__title.section__title--center.s-stats__title The Countdown Begins!
+			div.s-stats__list
+				div.s-stats-item
+					div.s-stats-item__value(data-value="2000") 0
+					div.s-stats-item__key attendees
+				div.s-stats-item
+					div.s-stats-item__value(data-value="840") 0
+					div.s-stats-item__key contestants
+				div.s-stats-item
+					div.s-stats-item__value(data-value="170") 0
+					div.s-stats-item__key universities
+				div.s-stats-item
+					div.s-stats-item__value(data-value="50") 0
+					div.s-stats-item__key countries
+
+	div.teaser
+		div.teaser__overlay
+		video(src="/video/full.mp4" controls).teaser__video
+		button.teaser__close Close

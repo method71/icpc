@@ -1,0 +1,18 @@
+extends ../.templates/page.pug
+
+block var
+	- var activeMenu = 'organizers'
+
+block body
+	section.hero.hero--organizers
+		div.hero__overlay
+	
+		div.hero__wrap
+			a(href="/").hero__logo
+				img(src="/logo/host.png")
+
+			div.hero__text
+				div.hero__title Host and Organizers
+
+	div.content.placeholder
+		| Information available soon

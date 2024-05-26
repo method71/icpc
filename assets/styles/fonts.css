@@ -1,0 +1,23 @@
+@font-face {
+	font-display: swap;
+	font-family: 'Rajdhani';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/rajdhani-v15-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/jetbrains-mono-v18-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'JetBrains Mono';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/jetbrains-mono-v18-latin-700.woff2') format('woff2');
+}
