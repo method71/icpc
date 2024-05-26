@@ -81,6 +81,10 @@ h6 {
   --accent-yellow: #fcba13;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "JetBrains Mono", sans-serif;
   font-size: 16px;
@@ -668,6 +672,11 @@ hr {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+@media (max-width: 77.5rem) {
+  .s-host__title {
+    max-width: none;
+  }
+}
 .s-host__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,6 +699,9 @@ hr {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 1.5rem;
   }
 }
 .s-host__item {
@@ -707,19 +719,14 @@ hr {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 1rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  width: 45%;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
 }
 @media (max-width: 77.5rem) {
   .s-host__item {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    width: 100%;
   }
 }
 .s-host__logo {

@@ -26,6 +26,10 @@ $container-width: 77.5rem;
 	--accent-yellow: #fcba13;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	font-family: 'JetBrains Mono', sans-serif;
 	font-size: 16px;
@@ -532,6 +536,10 @@ hr {
 	&__title {
 		max-width: 17.5rem;
 		flex-shrink: 0;
+
+		@include mobile {
+			max-width: none;
+		}
 	}
 
 	&__list {
@@ -544,6 +552,8 @@ hr {
 
 		@include mobile {
 			flex-direction: column;
+			flex-wrap: nowrap;
+			gap: 1.5rem;
 		}
 	}
 
@@ -553,13 +563,12 @@ hr {
 		justify-content: center;
 		align-items: flex-start;
 		gap: 1rem;
-		flex: 1 0 0;
-		flex-basis: 45%;
+		width: 45%;
 		align-self: stretch;
 		@extend %text-small;
 
 		@include mobile {
-			flex-basis: auto;
+			width: 100%;
 		}
 	}
 
