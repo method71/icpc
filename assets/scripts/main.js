@@ -81,3 +81,15 @@ import {CountUp} from './countUp.min.js';
 		counter.start();
 	});
 })();
+
+// spoiler
+(() => {
+	let spoiler = document.querySelectorAll('.spoiler');
+	if (!spoiler) return;
+
+	spoiler.forEach(el => {
+		el.querySelector('.spoiler__header').addEventListener('click', ()=>{
+			el.classList.toggle('spoiler--expanded');
+		});
+	});
+})();

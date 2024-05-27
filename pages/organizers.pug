@@ -4,15 +4,51 @@ block var
 	- var activeMenu = 'organizers'
 
 block body
-	section.hero.hero--organizers
+	header.hero.hero--organizers
 		div.hero__overlay
 	
 		div.hero__wrap
-			a(href="/").hero__logo
-				img(src="/logo/host.png")
+			a(href="index.html").hero__logo
+				img(src="logo/host.png")
 
 			div.hero__text
-				div.hero__title Host and Organizers
+				h1.hero__title Host and Organizers
 
-	div.content.placeholder
-		| Information available soon
+	main.content
+		div.b-organizer
+			div.b-organizer__logo
+				img(src="logo/cpf.png", alt="")
+			div.b-organizer__main
+				div.b-organizer__title Kazakhstan Competitive Programming Federation (CPFED)
+				p The Competitive Programming Federation, a republican public association, was established with the support of the Minister of Digital Development, Innovation and Aerospace Industry together with the representatives of the Digital Nomads Kazakhstan IT community and the country’s leading experts in competitive programming. Since its foundation, CPFED has been actively working on the implementation of a number of projects aimed at achieving the main goals of the Federation. These goals include the popularization and development of sports programming, improving the performance of Olympiad participants through training events, competitions and the creation of an active community.
+			div.b-organizer__links
+				a(href="https://cpfed.kz/en/" target="_blank") Website
+
+		div.b-organizer
+			div.b-organizer__logo
+				img(src="logo/dsm.png", alt="")
+			div.b-organizer__main
+				div.b-organizer__title Ministry of Digital Development, Innovations and Aerospace Industry of the Republic of Kazakhstan
+				p The Ministry of Digital Development, Innovations and Aerospace Industry of the Republic of Kazakhstan (MDDIA) is a central executive body in the digitalization sphere of the Government of Kazakhstan. MDDIAI actively fosters the development of educational programs within the IT sphere in the country. It implements projects to integrate digital technologies into educational institutions, provides training in IT and cybersecurity, and supports startups and innovative ideas in the IT sector. The ministry also works on creating and developing digital infrastructure to ensure accessibility of high-speed internet and digital services for all citizens.
+			div.b-organizer__links
+				a(href="https://www.gov.kz/memleket/entities/mdai?lang=en" target="_blank") Website
+
+		div.b-organizer
+			div.b-organizer__logo
+				img(src="logo/freedom.png", alt="")
+			div.b-organizer__main
+				div.b-organizer__title Freedom Holding Corp.
+				p Freedom Holding Corp. is a US-based financial services holding company. The Company has retail locations in 18 countries.
+				p In Kazakhstan, the company is developing a digital ecosystem under the Freedom brand. The ecosystem already provides services in the field of investment banking and stock market brokerage, digital banking, online insurance, telecommunications, air and event ticket sales, digital car service, smartphone sales and other areas.
+				p Freedom Holding Corp. shares are traded on the NASDAQ stock exchange. The activities of the company are regulated by the US Securities and Exchange Commission.
+			div.b-organizer__links
+				a(href="https://freedomholdingcorp.com/" target="_blank") Website
+
+		div.b-organizer
+			div.b-organizer__logo
+				img(src="logo/icpc.png", alt="")
+			div.b-organizer__main
+				div.b-organizer__title ICPC Foundation
+				p The International Collegiate Programming Contest is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. Through training and competition, teams challenge each other to raise the bar on the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in the world
+			div.b-organizer__links
+				a(href="https://icpc.global/" target="_blank") Website

@@ -4,15 +4,105 @@ block var
 	- var activeMenu = 'participants'
 
 block body
-	section.hero.hero--participants
+	header.hero.hero--participants
 		div.hero__overlay
 	
 		div.hero__wrap
-			a(href="/").hero__logo
-				img(src="/logo/host.png")
+			a(href="index.html").hero__logo
+				img(src="logo/host.png")
 
 			div.hero__text
-				div.hero__title For Participants
+				h1.hero__title For Participants
 
-	div.content.placeholder
-		| Information available soon
+	main.content
+		div.s-typeset
+			div.s-typeset__wrap
+				section.s-typeset__block
+					h1 Visa information
+					p All participants coming to Kazakhstan must confirm the need to obtain a Visa. Some countries/nationalities are exempt from holding a Visa to enter Kazakhstan. Please consult the list of countries, available on the official website of the Ministry of Foreign Affairs of the Republic of Kazakhstan: #[a(href="https://www.gov.kz/memleket/entities/mfa/activities/34747?lang=en" target="_blank") who needs visa?]
+					
+					div.spoiler
+						div.spoiler__header Countries with a Visa-free regime
+						div.spoiler__body
+							p Citizens of countries that have visa-free agreements with Kazakhstan can enter the country without a visa for a specified period. Even though a visa is not required, you must have a valid passport with at least 6 months remaining before expiration and a minimum of 2 empty pages.
+							p For more information on visa-free entry and any specific requirements for your nationality, visit the official website of the Ministry of Foreign Affairs of the Republic of Kazakhstan or contact the nearest Kazakh Embassy or Consulate #[a(href="https://www.gov.kz/memleket/entities/mfa/activities/34747?lang=en" target="_blank") click here]
+					
+					div.spoiler
+						div.spoiler__header Countries that require a Visa
+						div.spoiler__body
+							p For citizens of countries that require a visa to enter Kazakhstan, there are two ways to obtain it.
+							
+							h3 1. Obtaining a Visa Through the Embassy or Consulate.
+							p To apply for a visa through the Kazkah Embassy or Consulate in your country, follow these steps for submitting the required documents:
+							ol
+								li Download the host invitation letter, found on your dashboard on icpc.global; * There is a list of countries that do not require an invitation to apply for a visa, please check this point with the Embassy or Consulate
+								li Complete the Kazhakhstan Visa Application Form. You can get the application form at the Embassy or Consulate offices;
+								li Gather the required documents;
+								li Submit all documents to the Kazakh Embassy or Consulate;
+								li Pay the visa fees;
+								li Receive your passport back with your visa inserted.
+							
+							h3 2. Obtaining an Online Electronic Visa, i.e. e-Visa
+							p Make sure that you are eligible for an e-visa to Kazakhstan. This list can be found on the official website of the Ministry of Foreign Affairs #[a(href="https://www.gov.kz/memleket/entities/mfa/activities/3053?lang=en&parentId=3051" target="_blank") click here]
+							p For obtaining e-Visa, you should:
+							ol
+								li Register on the web portal #[a(href="https://vmp.gov.kz/en/" target="_blank") vmp.gov.kz/en/];
+								li Enter the section "electronic visa" and confirm existence of an invitation form the Host (found on your icpc.global dashboard);
+								li Learn the requirements for obtaining an electronic visa;
+								li Enter the invitation number (the invitation number is forwarded by the Kazakhstan side) and fill in the required passport details;
+								li After confirming your host invitation, verify and confirm all information is correct;
+								li Pay consular fee online 80 of USD (after payment it's important to return to the personal cabinet of the Visa and Migration portal);
+								li Print your electronic visa;
+							p Present your passport and electronic visa when passing through passport control upon entry into Kazakhstan.
+
+							h3 Helpful Tips
+							ul
+								li These steps provide a general overview, but the specific requirements and steps may vary depending on your individual circumstances. Therefore, it's advisable to check with the embassy or the MFA website if you have any questions or concerns.
+								li Always ensure your passport is for 6 months past your return date and has blank pages for the visa.
+								li Keep copies of all submitted documents and payment receipts in case of any issues.
+							p For any inquiries, please do not hesitate to contact us at #[a(href="mailto:visas2024@icpc.global") visas2024@icpc.global], no later than 40 days prior to your arrival in Astana in order to help you.
+					
+					div.spoiler
+						div.spoiler__header Airline Options For Travelling to Astana
+						div.spoiler__body
+							p We are pleased to provide a list of airlines that offer flights to Astana, ensuring convenient travel options for our visitors:
+							ol
+								li Air Astana
+								li Aeroflot
+								li Air Cairo
+								li Air China
+								li Azerbaijan Airlines
+								li Belavia
+								li China Southern Airlines
+								li Etihad Airways
+								li FlyArystan
+								li Flydubai
+								li Lot Polish Airlines
+								li Lufthansa Airlines
+								li Pegasus
+								li Qazaq Air
+								li Red Wings
+								li SCAT Airlines
+								li Somon Air
+								li Turkish Airlines
+								li Uzbekistan Airways
+								li Wizz Air
+							p This list includes both international and regional carriers, offering a variety of routes and schedules to suit your travel needs. For detailed flight information, schedules, and booking options, please visit the respective airline’s website or contact their customer service.
+							p We look forward to welcoming you to Astana!
+
+				section.s-typeset__block
+					h1 Transportation Information
+					p Participants will be met by the Host transportation team at the Nursultan Nazarbayev International Airport, holding a sign with the ICPC logo. They will provide all necessary information and assistance to ensure a smooth journey to ICPC hotels. 
+					p Similarly, when it's time for participants to leave, the Host transportation team will ensure they arrive at the Nursultan Nazarbayev International Airport in a timely manner, in order to return home safely.
+					p Local transportation will be provided to all participants from ICPC hotels to all events on the #[a(href="https://docs.icpc.global/wf-schedule/" target="_blank") ICPC World Finals Schedule]
+					p We look forward to welcoming all participants, coaches and guests and ensuring a comfortable arrival at and departure from the 48th Annual ICPC World Finals Championship.
+					p If you have any questions or concerns, please contact us at #[a(href="mailto:transportation2024@icpc.global") transportation2024@icpc.global]
+
+				section.s-typeset__block
+					h1 Health & Security Measures
+					ol
+						li #[b Medical Assistance:] In case of medical emergencies, please reach out to our team representatives. We collaborate with local medical facilities to provide prompt and quality assistance.
+						li #[b Availability of Masks and Sanitizers:] Masks and sanitizers will be readily available throughout all ICPC events, ensuring that anyone in need can access them.
+						li #[b Event Safety:] We ensure a secure environment at all event venues. Kindly follow all staff instructions and adhere to guidelines for your protection.
+						li #[b Emergency Situations:] In the event of an emergency, approach the nearest event staff member or call the emergency assistance number.
+					p Your health and well-being are of utmost importance to us. Rest assured, we have taken every precaution to ensure a safe and enjoyable experience during the 2024 ICPC World Finals in Kazakhstan. If you have any further inquiries or concerns, please don't hesitate to reach out to us at #[a(href="mailto:manager@icpc.global") manager@icpc.global]. We’re here to help!
