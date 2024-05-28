@@ -2,8 +2,8 @@ import {CountUp} from './countUp.min.js';
 
 // welcome to astana slider
 (()=>{
-	let section_el = document.querySelector('.s-city'),
-		slider_el = document.querySelector('.s-city > .s-slider__list');
+	let section_el = document.querySelector('.s-slider'),
+		slider_el = document.querySelector('.s-slider > .s-slider__list');
 	
 	if(slider_el) {
 		let slider = new Swiper(slider_el, {

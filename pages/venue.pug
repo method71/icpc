@@ -4,15 +4,67 @@ block var
 	- var activeMenu = 'venue'
 
 block body
-	section.hero.hero--venue
+	header.hero.hero--venue
 		div.hero__overlay
 	
 		div.hero__wrap
-			a(href="/").hero__logo
+			a(href="index.html").hero__logo
 				img(src="logo/host.png")
 
 			div.hero__text
-				div.hero__title Venue
+				h1.hero__title Venue
 
-	div.content.placeholder
-		| Information available soon
+	div.content
+		section.b-venue
+			div.b-venue__images
+				img(src="assets/img/venue-1.png")
+				img(src="assets/img/venue-2.png")
+			div.b-venue__main
+				h1.b-venue__title EXPO International Exhibition Center and Congress Center
+				div.b-venue__text
+					p Expo International Exhibition Center and Congress Center are set to take center stage as the prestigious venues for the 2024 International Collegiate Programming Contest (ICPC).
+					p Built for the 2017 EXPO, Expo International Exhibition Center has become a symbol of sustainable development and innovative technologies. The center regularly hosts major international exhibitions and events, making it an ideal location for the 2024 ICPC World Finals. 
+					p With modern amenities and a focus on high-quality service, the Congress Center provides a comfortable and effective  environment for all participants of the 2024 ICPC World Finals. Its central location and excellent facilities make it a prime venue for this prestigious event.
+		
+		section.b-map
+
+		hr
+
+		section.section.s-slider.s-hotels
+			div.s-slider__heading.section__heading
+				h1.section__title.s-slider__title Hotels
+				nav.s-slider__controls
+					button.s-slider__controls-item(data-direction="prev") (<-)
+					button.s-slider__controls-item(data-direction="next") (->)
+			div.s-slider__list
+				div.swiper-wrapper
+					a(href="https://www.rixos.com/en/hotel-resort/rixos-president-astana" target="_blank").s-hotels-item.swiper-slide
+						img(src="assets/img/hotels/1.png").s-hotels-item__photo
+						div.s-hotels-item__text
+							div.s-hotels-item__title Rixos President
+							div.s-hotels-item__address Kunaev St 7
+					a(href="https://www.hilton.com/en/hotels/tsekahi-hilton-astana/?WT.mc_id=zINDA0EMEA1MB2PSH3BNG4INTBPP5dkt6MULTIBR7_121147783_1004635_p72538778700&&&&&&msclkid=675b2ef9f39d1b35e18448b43c4c77d8&gclid=675b2ef9f39d1b35e18448b43c4c77d8&gclsrc=3p.ds" target="_blank").s-hotels-item.swiper-slide
+						img(src="assets/img/hotels/2.png").s-hotels-item__photo
+						div.s-hotels-item__text
+							div.s-hotels-item__title Hilton Astana
+							div.s-hotels-item__address Heidar Aliyev St 14
+					a(href="https://soluxeastana.kz/en/" target="_blank").s-hotels-item.swiper-slide
+						img(src="assets/img/hotels/3.png").s-hotels-item__photo
+						div.s-hotels-item__text
+							div.s-hotels-item__title Beijing Palace Soluxe
+							div.s-hotels-item__address Syganak St 45
+					a(href="https://www.wyndhamhotels.com/wyndham-garden/astana-kazakhstan/wyndham-garden-astana/overview" target="_blank").s-hotels-item.swiper-slide
+						img(src="assets/img/hotels/4.png").s-hotels-item__photo
+						div.s-hotels-item__text
+							div.s-hotels-item__title Wyndham Garden Astana
+							div.s-hotels-item__address Hussein bin Talal St 25
+					a(href="http://en.saad-hotel.com/" target="_blank").s-hotels-item.swiper-slide
+						img(src="assets/img/hotels/5.png").s-hotels-item__photo
+						div.s-hotels-item__text
+							div.s-hotels-item__title Saad Hotel Astana
+							div.s-hotels-item__address Dostyk St 2
+					a(href="https://www.hilton.com/en/hotels/tseakgi-hilton-garden-inn-astana/" target="_blank").s-hotels-item.swiper-slide
+						img(src="assets/img/hotels/6.png").s-hotels-item__photo
+						div.s-hotels-item__text
+							div.s-hotels-item__title Hilton Garden Inn
+							div.s-hotels-item__address Kabanbai Batyr Ave 15
