@@ -1482,7 +1482,7 @@ hr {
 
 .b-map {
   background: var(--accent-blue);
-  aspect-ratio: 1/0.7;
+  aspect-ratio: 1/0.6;
   border-radius: 1.25rem;
 }
 
