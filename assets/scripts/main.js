@@ -99,7 +99,7 @@ import {CountUp} from './countUp.min.js';
 	let map, mapElement = document.getElementById("map");
 
 	function initMap() {
-		const position = { lat: 51.089315839958346, lng: 71.41601615952058 };
+		const position = { lat: 51.09353780393544, lng: 71.41753412701154 };
 
 		const map = new google.maps.Map(mapElement, {
 			zoom: 15,

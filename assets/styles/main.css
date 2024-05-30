@@ -108,7 +108,7 @@ hr {
   background: url(../img/hr.png) repeat-x;
 }
 
-.b-venue__title, .b-sight__title, .section__title, .hero__title {
+.b-general__title, .b-sight__title, .section__title, .hero__title {
   font-family: "Rajdhani", sans-serif;
   font-size: 3rem;
   font-weight: 700;
@@ -116,7 +116,7 @@ hr {
   color: var(--text-strong);
 }
 @media (max-width: 77.5rem) {
-  .b-venue__title, .b-sight__title, .section__title, .hero__title {
+  .b-general__title, .b-sight__title, .section__title, .hero__title {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
@@ -134,7 +134,7 @@ hr {
           backdrop-filter: blur(20px);
 }
 
-.b-map, .b-venue__images img, .b-sight__image, .s-hotels-item__photo, .s-stats-item, .s-city-item, .s-country__photos img, .s-quote__photo > img:not(.s-quote__photo-blur), .s-quote, .mainmenu__toggle {
+.b-map, .b-venue__item img, .b-sight__image, .s-hotels-item__photo, .s-stats-item, .s-city-item, .s-country__photos img, .s-quote__photo > img:not(.s-quote__photo-blur), .s-quote, .mainmenu__toggle {
   -webkit-box-shadow: 0px 20px 40px 0px rgba(1, 54, 116, 0.2);
           box-shadow: 0px 20px 40px 0px rgba(1, 54, 116, 0.2);
 }
@@ -357,7 +357,9 @@ hr {
 .teaser {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +381,9 @@ hr {
 .teaser__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
 }
@@ -721,12 +725,6 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   gap: 1rem;
   width: 45%;
   -ms-flex-item-align: stretch;
@@ -1433,51 +1431,48 @@ hr {
   gap: 1rem;
 }
 
-.b-venue__images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-.b-venue__images img {
-  border-radius: 1.25rem;
+.b-general {
+  max-width: 37.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
 }
 @media (max-width: 77.5rem) {
-  .b-venue__images {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+  .b-general {
+    text-align: left;
   }
 }
-.b-venue__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 2.5rem;
+.b-general__title {
+  margin-bottom: 1.5rem;
 }
 @media (max-width: 77.5rem) {
-  .b-venue__main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1rem;
+  .b-general__title {
+    margin-bottom: 1rem;
   }
 }
-.b-venue__title, .b-venue__text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-}
-.b-venue__text p + p {
+.b-general__text p + p {
   margin-top: 1em;
+}
+
+.b-venue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+}
+@media (max-width: 77.5rem) {
+  .b-venue {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.b-venue__item img {
+  border-radius: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .b-map {
