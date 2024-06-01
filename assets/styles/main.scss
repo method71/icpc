@@ -848,17 +848,12 @@ hr {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 1rem;
-		align-self: stretch;
+		gap: 2.5rem;
 		flex-wrap: wrap;
 
 		@include mobile {
 			flex-direction: column;
 		}
-	}
-
-	&__item {
-		padding: 0rem 1.5rem;
 	}
 }
 

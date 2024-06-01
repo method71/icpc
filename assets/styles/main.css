@@ -1083,10 +1083,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  gap: 2.5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1098,10 +1095,6 @@ hr {
             flex-direction: column;
   }
 }
-.s-partners__item {
-  padding: 0rem 1.5rem;
-}
-
 .s-stats__list {
   display: -webkit-box;
   display: -ms-flexbox;
