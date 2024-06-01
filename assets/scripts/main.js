@@ -1,5 +1,37 @@
 import {CountUp} from './countUp.min.js';
 
+// video
+(() => {
+	let play_button = document.querySelector('.play-button'),
+		video = document.querySelector('.teaser__video'),
+		close_button = document.querySelector('.teaser__close'),
+		overlay = document.querySelector('.teaser__overlay');
+
+	if(!video) return false;
+
+	let player;
+
+	window.YT.ready(function () {
+		player = new YT.Player(video, {
+			videoId: 'HNpZvwf93-Q',
+		});
+	});
+
+	let open_video = () => {
+		document.querySelector('.teaser').classList.add('teaser--visible');
+		player.playVideo();
+	}
+
+	let close_video = () => {
+		player.stopVideo();
+		document.querySelector('.teaser').classList.remove('teaser--visible');
+	}
+
+	play_button.addEventListener('click', () => open_video());
+	close_button.addEventListener('click', () => close_video());
+	overlay.addEventListener('click', () => close_video());
+})();
+
 // welcome to astana slider
 (()=>{
 	let section_el = document.querySelector('.s-slider'),
@@ -35,33 +67,6 @@ import {CountUp} from './countUp.min.js';
 
 	toggle.addEventListener('click', () => toggleMenu());
 	overlay.addEventListener('click', () => toggleMenu());
-})();
-
-
-// video
-(()=>{
-	let play_button = document.querySelector('.play-button');
-
-	if(play_button) {
-		let close_button = document.querySelector('.teaser__close'),
-			overlay = document.querySelector('.teaser__overlay'),
-			video = document.querySelector('.teaser__video');
-
-		let open_video = () => {
-			document.querySelector('.teaser').classList.add('teaser--visible');
-			video.play();
-		}
-
-		let close_video = () => {
-			video.pause();
-			video.currentTime = 0;
-			document.querySelector('.teaser').classList.remove('teaser--visible');
-		}
-		
-		play_button.addEventListener('click', () => open_video());
-		close_button.addEventListener('click', () => close_video());
-		overlay.addEventListener('click', () => close_video());
-	}
 })();
 
 // stats

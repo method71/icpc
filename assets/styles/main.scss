@@ -301,6 +301,7 @@ hr {
 		width: 100%;
 		max-width: $container-width;
 		aspect-ratio: 16/9;
+		height: auto;
 		border-radius: 1.25rem;
 		z-index: 1;
 		transition: all .1s ease-in;

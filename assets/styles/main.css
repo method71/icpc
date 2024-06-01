@@ -395,6 +395,7 @@ hr {
   width: 100%;
   max-width: 77.5rem;
   aspect-ratio: 16/9;
+  height: auto;
   border-radius: 1.25rem;
   z-index: 1;
   -webkit-transition: all 0.1s ease-in;
