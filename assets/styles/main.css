@@ -108,7 +108,7 @@ hr {
   background: url(../img/hr.png) repeat-x;
 }
 
-.b-general__title, .b-sight__title, .section__title, .hero__title {
+.b-venue__title, .b-general__title, .b-sight__title, .section__title, .hero__title {
   font-family: "Rajdhani", sans-serif;
   font-size: 3rem;
   font-weight: 700;
@@ -116,7 +116,7 @@ hr {
   color: var(--text-strong);
 }
 @media (max-width: 77.5rem) {
-  .b-general__title, .b-sight__title, .section__title, .hero__title {
+  .b-venue__title, .b-general__title, .b-sight__title, .section__title, .hero__title {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
@@ -1461,6 +1461,8 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2.5rem;
 }
 @media (max-width: 77.5rem) {
@@ -1472,9 +1474,18 @@ hr {
     gap: 1.5rem;
   }
 }
+.b-venue__item {
+  -ms-flex-preferred-size: calc(50% - 1.25rem);
+      flex-basis: calc(50% - 1.25rem);
+}
 .b-venue__item img {
   border-radius: 1.25rem;
   margin-bottom: 1.5rem;
+}
+.b-venue__title {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
 }
 
 .b-map {

@@ -1144,6 +1144,7 @@ hr {
 
 .b-venue {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 2.5rem;
 
 	@include mobile {
@@ -1152,11 +1153,20 @@ hr {
 	}
 
 	&__item {
+		flex-basis: calc(50% - 2.5rem / 2);
+		
 		img {
 			border-radius: 1.25rem;
 			@extend %shadow;
 			margin-bottom: 1.5rem;
 		}
+	}
+
+	&__title {
+		@extend %title;
+		font-size: 1.75rem;
+		line-height: 2.25rem;
+		margin-bottom: 1rem;
 	}
 }
 

@@ -107,7 +107,7 @@ import {CountUp} from './countUp.min.js';
 		const position = { lat: 51.09353780393544, lng: 71.41753412701154 };
 
 		const map = new google.maps.Map(mapElement, {
-			zoom: 15,
+			zoom: 13,
 			center: position,
 			disableDefaultUI: true,
 			styles: [
@@ -248,7 +248,7 @@ import {CountUp} from './countUp.min.js';
 				}
 			]
 		});
-
+		
 		var marker1 = new google.maps.Marker({
 			position: new google.maps.LatLng(51.09237258687083, 71.41140018432453),
 			map: map,
@@ -259,6 +259,12 @@ import {CountUp} from './countUp.min.js';
 			position: new google.maps.LatLng(51.09290359119403, 71.42210347720625),
 			map: map,
 			title: 'Expo International Exhibition Center'
+		});
+
+		var marker2 = new google.maps.Marker({
+			position: new google.maps.LatLng(51.114588, 71.442260),
+			map: map,
+			title: 'Presidential Center of the Republic of Kazakhstan'
 		});
 	}
 
