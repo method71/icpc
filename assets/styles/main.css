@@ -1362,7 +1362,7 @@ hr {
           flex: 1 1 50%;
 }
 .b-city__pattern {
-  background: url(../img/pattern-4.svg) no-repeat center/contain;
+  background: url(../img/pattern-4.png) no-repeat center/contain;
 }
 @media (max-width: 77.5rem) {
   .b-city__pattern {
