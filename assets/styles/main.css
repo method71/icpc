@@ -470,6 +470,9 @@ hr {
 .hero--venue {
   background-image: url(../img/venue-bg.png);
 }
+.hero--challenge {
+  background-image: url(../img/challenge-bg.png);
+}
 .hero__video {
   position: absolute;
   inset: 0;
@@ -1492,6 +1495,48 @@ hr {
   background: var(--accent-blue);
   aspect-ratio: 1/0.6;
   border-radius: 1.25rem;
+}
+
+.b-prizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+@media (max-width: 77.5rem) {
+  .b-prizes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+}
+.b-prizes__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.25rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+}
+.b-prizes__image {
+  margin: 0.75rem 0;
+  max-width: 14rem;
+}
+.b-prizes__title {
+  color: var(--text-strong);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.b-prizes__description {
+  color: #98ACBE;
 }
 
 .footer {

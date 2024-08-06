@@ -371,6 +371,10 @@ hr {
 		background-image: url(../img/venue-bg.png);
 	}
 
+	&--challenge {
+		background-image: url(../img/challenge-bg.png);
+	}
+
 	&__video {
 		position: absolute;
 		inset: 0;
@@ -1175,6 +1179,39 @@ hr {
 	aspect-ratio: 1/0.6;
 	border-radius: 1.25rem;
 	@extend %shadow;
+}
+
+.b-prizes {
+	display: flex;
+	gap: 1rem;
+
+	@include mobile {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		flex: 1 0 0;
+	}
+
+	&__image {
+		margin: 0.75rem 0;
+		max-width: 14rem;
+	}
+
+	&__title {
+		color: var(--text-strong);
+		font-size: 1.125rem;
+		font-weight: 700;
+		line-height: 1.5rem;
+	}
+
+	&__description {
+		color: #98ACBE;
+	}
 }
 
 .footer {

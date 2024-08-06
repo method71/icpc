@@ -1,0 +1,69 @@
+extends ../.templates/page.pug
+
+block var
+	- var activeMenu = 'challenge'
+
+block body
+	header.hero.hero--challenge
+		div.hero__overlay
+	
+		div.hero__wrap
+			a(href="index.html").hero__logo
+				img(src="logo/host.svg")
+
+			div.hero__text
+				h1.hero__title ICPC Challenge
+
+	main.content
+		div.s-typeset
+			div.s-typeset__wrap
+				section.s-typeset__block
+					p
+						img(src="/logo/challenge.svg")
+					p The 2024 World Finals ICPC Challenge powered by Huawei will take place on #[a(href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=The+2024+World+Finals+ICPC+Challenge+powered+by+Huawei&iso=20240917T11&p1=921&ah=3" target="_blank") Tuesday, September 17, 2024, at 11:00 am local time (UTC/GMT +5 hours)], at the EXPO International Exhibition Center during the 48th Annual World Championship of the ICPC International Collegiate Programming Contest.
+					p Contestants participating in the ICPC World Finals will compete in the three (3) hour onsite ICPC Challenge. Coaches for the competing teams will also be able to participate onsite in the Coach ICPC Challenge powered by Huawei.
+					p The Problem statement will be based on Large Language Models. LLM is a trending topic in today’s tech world. Training a powerful LLM requires not only high-quality datasets, but also massive computing power. This challenge offers you an opportunity to create an algorithm that will be used for allocation of a model on a computer cluster, and achieve an optimal utilization of a cluster’s resources.
+					p ICPC Challenge Contestants will be separated into two areas; Coaches can participate in the Coaches Viewing area, located at the Spotlight Stage at the EXPO, and World Finals participants will be competing in the Team Area that will be used for the 2024 ICPC World Finals.
+					p Prizes will be awarded to the following ranks in the competition in the following categories.
+				
+				section.s-typeset__block
+					h1 Team Challenge
+					.b-prizes
+						.b-prizes__item
+							.b-prizes__title First Prize
+							.b-prizes__subtitle 12 contestants
+							img.b-prizes__image(src="/assets/img/prize-1.png")
+							.b-prizes__description HUAWEI MateBook X Pro
+						.b-prizes__item
+							.b-prizes__title Second Prize
+							.b-prizes__subtitle 12 contestants
+							img.b-prizes__image(src="/assets/img/prize-2.png")
+							.b-prizes__description HUAWEI WATCH Ultimate
+						.b-prizes__item
+							.b-prizes__title Third Prize
+							.b-prizes__subtitle 12 contestants
+							img.b-prizes__image(src="/assets/img/prize-3.png")
+							.b-prizes__description HUAWEI MatePad Pro
+
+				section.s-typeset__block
+					h1 Team Challenge
+					.b-prizes
+						.b-prizes__item
+							.b-prizes__title First Prize
+							.b-prizes__subtitle 1 coach
+							img.b-prizes__image(src="/assets/img/prize-1.png")
+							.b-prizes__description HUAWEI MateBook X Pro
+						.b-prizes__item
+							.b-prizes__title Second Prize
+							.b-prizes__subtitle 2 coaches
+							img.b-prizes__image(src="/assets/img/prize-2.png")
+							.b-prizes__description HUAWEI WATCH Ultimate
+						.b-prizes__item
+							.b-prizes__title Third Prize
+							.b-prizes__subtitle 3 coaches
+							img.b-prizes__image(src="/assets/img/prize-3.png")
+							.b-prizes__description HUAWEI MatePad Pro
+
+				section.s-typeset__block
+					p External participants will not be able to compete online for this ICPC Challenge but stay tuned for information on the 2024 Post-World Finals ICPC Challenge powered by Huawei.
+					p Catch all the action during the competition on #[a(href="https:/live.icpc.global" target="_blank") live.icpc.global]
