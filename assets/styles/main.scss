@@ -1001,6 +1001,37 @@ hr {
 	}
 }
 
+.s-press {
+	display: flex;
+	align-items: center;
+	background: #EFF2F6;
+	padding: 2.5rem;
+	gap: 2.5rem;
+	font-size: .875rem;
+	line-height: 1.25rem;
+	border-radius: 1.25rem;
+
+	@include mobile {
+		flex-direction: column;
+		padding: 2rem 1rem;
+		gap: 1.5rem;
+	}
+
+	&__col {
+		flex: 1 1 50%;
+	}
+
+	&__text {
+		p + p {
+			margin-top: 1rem;
+		}
+
+		b {
+			font-weight: bold;
+		}
+	}
+}
+
 .b-organizer {
 	display: flex;
 	align-items: flex-start;
